@@ -12,14 +12,14 @@ function SigninForm() {
         </TextField.Slot>
       </TextField.Root>
 
-      <label htmlFor='password'>Passowrd</label>
-      <TextField.Root type='password' placeholder='*********' autoFocus>
+      <label htmlFor='password'>Password</label>
+      <TextField.Root type='password' placeholder='*********'>
         <TextField.Slot>
           <LockClosedIcon height='16' width='16' />
         </TextField.Slot>
       </TextField.Root>
 
-      <Button>Sign in</Button>
+      <Button>Sign In</Button>
     </Flex>
   )
 }
