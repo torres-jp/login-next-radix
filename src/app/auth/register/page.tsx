@@ -1,4 +1,4 @@
-import SignupForm from '@/components/auth/SignupForm'
+import SignupForm from '../../../../auth/SignupForm'
 import { Card, Container, Flex, Heading, Text, Link } from '@radix-ui/themes'
 import NavLink from 'next/link'
 

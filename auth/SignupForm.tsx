@@ -6,6 +6,7 @@ import {
   PersonIcon,
 } from '@radix-ui/react-icons'
 import { useForm, Controller } from 'react-hook-form'
+import axios from 'axios'
 
 function SignupForm() {
   const {
@@ -20,8 +21,10 @@ function SignupForm() {
     },
   })
 
-  const onSubmit = handleSubmit((data) => {
+  const onSubmit = handleSubmit(async (data) => {
     console.log(data)
+    const res = await axios.post('/api/auth/signup', data)
+    console.log(res)
   })
 
   return (
